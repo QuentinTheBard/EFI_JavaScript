@@ -1,11 +1,14 @@
 import React from 'react';
+import "../App.css"
 
 function Prueba() {
     return(
-        <div>
-            <p>
-                hola
-            </p>
+        <div className="Main">
+            <div className="CajaTexto" style={{backgroundColor: 'blue'}}>
+                <p>
+                    hola
+                </p>
+            </div>
         </div>
     )
 }
