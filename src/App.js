@@ -2,21 +2,26 @@ import './App.css';
 import React from 'react';
 import Index from './components/Index'
 import "./CSS/switch.css"
+import ReactSwitch from 'react-switch';
 
 
 import {createContext, useState} from 'react'
 
-export const ThemeContext = createContext(null)
+export const Context = createContext(null)
 
 function App() {
   const [theme, setTheme] = useState("light")
+  
 
   const toggleTheme = () => {
     setTheme((actual) => (actual === "light" ? "dark" : "light"))
   }
 
+ 
+
   return(
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    <Context.Provider value={{theme, toggleTheme}}>
+
     <div class ="cont-switch" onChange={() => toggleTheme()}>
         <h1>Modo</h1>
         <label class="switch">
@@ -26,9 +31,12 @@ function App() {
     </div>
 
     <div className="App" id={theme}>
+      <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
       <Index />
     </div>
-    </ThemeContext.Provider>
+
+
+    </Context.Provider>
   )
 }
   
