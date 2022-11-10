@@ -31,7 +31,7 @@
 }
 
 #light .DirectionsContainer{
-    width: 300px;
+    width: 400px;
     height: 300px;
     background-color: #223843;
     display: flex;
@@ -43,7 +43,7 @@
 }
 
 #dark .DirectionsContainer{
-    width: 350px;
+    width: 400px;
     height: 300px;
     background-color: #81A684;
     display: flex;
