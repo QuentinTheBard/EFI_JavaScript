@@ -4,7 +4,7 @@ import "../CSS/style.css"
 function Menu() {
     return(
     <div>
-        <div className="titleContainer">
+        <div className="titleContainer"> {/*Esto se reemplazara dependiendo de la pagina*/}
             <h1 className="Title">BUENOS DIAS</h1>
         </div>
         <section className="section">
