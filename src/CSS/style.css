@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Prompt', sans-serif;
+    
 }
-
+/* Desactivo el scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
 .titleContainer{
     padding-top: 40px;
 }
@@ -24,7 +28,8 @@
 
 .section {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +83,6 @@ ul li {
     background: linear-gradient(135deg, #c75330, #5f0000);
 }
 #dark ul li{
-     
         width: 100%;
         margin: 3px 0;
         border-radius: 5px;

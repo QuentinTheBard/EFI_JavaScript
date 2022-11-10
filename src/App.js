@@ -32,9 +32,14 @@ function App() {
     </div> */}
 
     <div className="App" id={theme}>
-      <div className='switch-container'>
-        <h1 className='nombre_switch'>Dark Mode</h1>
-        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+      <div className="App-header">
+        <div className='switch-container'>
+          <h1 className='nombre_switch'>Dark Mode</h1>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        </div>
+        <div className='language-container'> {/*Este es el contenedor para el componente de cambio de lenguaje*/}
+          <h1>Choose Language</h1>
+        </div>
       </div>
       <Menu/>
     </div>
