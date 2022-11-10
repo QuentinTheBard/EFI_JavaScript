@@ -20,8 +20,16 @@
     font-family: Lato, sans-serif;
 }
 
+.dark{
+    background-color: #0E0F19;
+}
 
-#light { 
+.light{
+    background-color: #EFF1F3;
+}
+
+
+/* #light { 
     background-color: #EFF1F3;
 }
 
@@ -32,7 +40,7 @@
  .nombre_switch {
     color: #fff;
     font-family: 'Prompt', sans-serif;       
-}
+} */
 
 
 
