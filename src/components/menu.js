@@ -1,7 +1,7 @@
 import React from 'react';
 import "../CSS/style.css"
 
-function Index() {
+function Menu() {
     return(
     <div>
         <div className="titleContainer">
@@ -24,4 +24,4 @@ function Index() {
     )
 }
 
-export default Index
+export default Menu;
