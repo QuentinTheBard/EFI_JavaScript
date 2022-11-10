@@ -14,23 +14,24 @@ function Menu() {
             <h1 className="Title">BUENOS DIAS</h1>
         </div>
         <section className="section">
-            <input 
-                type="radio"
-                name="theme"
-                id="light"
-                onClick={handleTheme}
-                value="light"
-            />
-            <label htmlFor="light">Claro</label>
-
-            <input 
-                type="radio"
-                name="theme"
-                id="dark"
-                onClick={handleTheme}
-                value="dark"
-            />
-            <label htmlFor="dark">Oscuro</label>
+            <div className="buttonContainer">
+                <input 
+                    type="radio"
+                    name="theme"
+                    id="light"
+                    onClick={handleTheme}
+                    value="light"
+                />
+                <label classname="label" htmlFor="light">Claro</label>
+                <input 
+                    type="radio"
+                    name="theme"
+                    id="dark"
+                    onClick={handleTheme}
+                    value="dark"
+                />
+                    <label classname="label" htmlFor="dark">Oscuro</label>
+            </div>
 
             <div className="DirectionsContainer">
                 <ul>
