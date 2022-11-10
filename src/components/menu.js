@@ -12,8 +12,8 @@ function Menu() {
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Faq</a></li>
                     <li><a href="">Contact Us</a></li>
                 </ul>
             </div>
