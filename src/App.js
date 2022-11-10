@@ -33,8 +33,8 @@ function App() {
 
     <div className="App" id={theme}>
       <div className='switch-container'>
-      <h1 className='nombre_switch'>Modo oscuro</h1>
-      <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        <h1 className='nombre_switch'>Dark Mode</h1>
+        <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
       </div>
       <Menu/>
     </div>

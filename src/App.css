@@ -29,15 +29,12 @@
     background-color: #0E0F19;
 }
 
-#light .nombre_switch {
+ .nombre_switch {
     color: #fff;
-    
+    font-family: 'Prompt', sans-serif;       
 }
 
-#dark .nombre_switch {
-     color: #fff;
-     
-}
+
 
 
 .App  {
