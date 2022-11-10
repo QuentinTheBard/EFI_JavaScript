@@ -10,7 +10,7 @@ function Menu() {
 
     return(
     <div className={theme}>
-        <div className="titleContainer">
+        <div className={theme}>
             <h1 className="Title">BUENOS DIAS</h1>
         </div>
         <section className="section">

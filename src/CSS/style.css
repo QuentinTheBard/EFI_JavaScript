@@ -12,19 +12,39 @@
     padding-top: 40px;
 }
 
-#light .Title{
+
+
+
+
+
+.dark{
+    color: black
+}
+
+.dark .Title{
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: white
+}
+
+.light{
+    color: white
+}
+
+.light .Title{
     font-family: 'Prompt', sans-serif;
     font-weight: bold;
     font-size: 23px;
     color: black
 }
 
-#dark .Title{
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-    font-size: 23px;
-    color: white
-}
+
+
+
+
+
+
 
 .section {
     width: 100%;
