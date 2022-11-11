@@ -17,16 +17,8 @@ import {
 
 function App() {
   return (
-
     <div className="App">
       <Router>
-        {/* <Routes>
-          <Route path="/About" element={<About />} />
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/Contact" element={<Contact />} />
-          
-
-        </Routes> */}
         <ThemeProvider>
         <LanguageProvider>
         <Routes>
@@ -37,14 +29,7 @@ function App() {
           <MenuLang />
         </LanguageProvider>
         </ThemeProvider>
-
       </Router>;
-
-
-      {/* <ThemeProvider> */}
-      {/* <MenuTheme/> */}
-      {/* </ThemeProvider> */}
-
     </div>
   )
 }
