@@ -5,6 +5,7 @@ import { useState } from "react"
 const LanguageContext = createContext()
 
 const initialLanguage = "esp"
+
 const translation={
     esp:{
         Home: "Inicio",
@@ -25,13 +26,14 @@ const translation={
 const LanguageProvider = ({children}) => {
 
     const [language, setLanguage] = useState(initialLanguage)
-    const [text, setText] = useState(translation(language))
+    const [text, setText] = useState(translation[language])
 
     const handleLanguage = (e) =>{
         if (e.target.value === "esp"){
             setLanguage("esp")
-            setText(translation.esp);
-        }else{
+            setText(translation.esp)
+        }
+        else{
             setLanguage("eng")
             setText(translation.eng)
         }
@@ -43,6 +45,6 @@ const LanguageProvider = ({children}) => {
     )
 }
 
-export { LanguageProvider };
+export {LanguageProvider}
 
 export default LanguageContext

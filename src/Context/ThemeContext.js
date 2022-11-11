@@ -6,7 +6,6 @@ const ThemeContext = createContext()
 
 const initialTheme = "light"
 
-
 const ThemeProvider = ({children}) => {
 
     const [theme, setTheme] = useState(initialTheme)
