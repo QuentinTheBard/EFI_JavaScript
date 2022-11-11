@@ -3,15 +3,18 @@ import "../CSS/style.css";
 import { useContext } from "react"
 import { Link } from 'react-router-dom';
 import LanguageContext from '../Context/LanguageContext';
+import ThemeContext from '../Context/ThemeContext';
+
 
 function Menu2() {
     const { text, handleLanguage } = useContext(LanguageContext);
+    const {theme, handleTheme} = useContext(ThemeContext); 
 
     return (
 
-        <div>
-            <div className="titleContainer">
-                <h1 className="Title">{text.About}</h1>
+        <div className={theme}>
+            <div className={theme}>
+                <h1 className="Title">{text.Title}</h1>
             </div>
 
             <select name="language" onClick={handleLanguage}>
@@ -19,7 +22,7 @@ function Menu2() {
                 <option value="eng">ING</option>
             </select>
 
-            <div >
+            {/* <div >
                 <input
                     type="radio"
                     name="theme"
@@ -36,9 +39,30 @@ function Menu2() {
                     value="eng"
                 />
                 <label>ing</label>
-            </div>
+            </div> */}
 
             <section className="section">
+                <div className="buttonContainer">
+                    <input 
+                        type="radio"
+                        name="theme"
+                        id="light"
+                        onClick={handleTheme}
+                        value="light"
+                    />
+                    <label classname="label" htmlFor="light">{text.LightLabel}</label>
+                    <input 
+                        type="radio"
+                        name="theme"
+                        id="dark"
+                        onClick={handleTheme}
+                        value="dark"
+                    />
+                        <label classname="label" htmlFor="dark">{text.DarkLabel}</label>
+                </div>
+
+                
+
                 <div className="DirectionsContainer">
                     <ul>
                         <li>

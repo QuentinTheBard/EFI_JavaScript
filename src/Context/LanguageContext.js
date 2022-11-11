@@ -8,18 +8,32 @@ const initialLanguage = "esp"
 
 const translation={
     esp:{
+        Title: "Buenos Dias",
         Home: "Inicio",
         About: "Acerca de",
+        AboutPageTitle: "Acerca de Nosotros",
         Proyects: "Proyectos",
         FAQ: "FAQ",
-        Contact: "Contacto"
+        Contact: "Contacto",
+        ContactPageTitle:"Contactenos",
+        Blog: "Blog",
+        BlogPageTitle: "Este es nuestro Blog",
+        LightLabel: "CLARO",
+        DarkLabel: "OSCURO"
     },
     eng:{
+        Title: "Good Morning",
         Home: "Home",
         About: "About",
+        AboutPageTitle: "About Us",
         Proyects: "Proyects",
         FAQ: "FAQ",
-        Contact: "Contact"
+        Contact: "Contact",
+        ContactPageTitle:"Contact Us",
+        Blog: "Blog",
+        BlogPageTitle: "This is our Blog",
+        LightLabel: "LIGHT",
+        DarkLabel: "DARK"
     }
 }
 
