@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/style.css";
+import projects from '../img/projects.png'
 import { useContext } from "react"
 import { Link } from 'react-router-dom';
 import LanguageContext from '../Context/LanguageContext';
@@ -12,6 +13,7 @@ const Blog = () => {
     return(
     <div>
 
+        <img src={projects}/>
         <h1>{text.BlogPageTitle}</h1>
 
 

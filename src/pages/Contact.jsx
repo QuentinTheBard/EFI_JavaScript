@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/style.css";
+import contact_us from "../img/contact_us.png"
 import { useContext } from "react"
 import { Link } from 'react-router-dom';
 import LanguageContext from '../Context/LanguageContext';
@@ -12,6 +13,7 @@ const Contact = () => {
     return(
     <div>
 
+        <img src={contact_us}/>
         <h1>{text.ContactPageTitle}</h1>
 
 
