@@ -17,34 +17,16 @@ function Menu2() {
                 <h1 className="Title">{text.Title}</h1>
             </div>
 
-            <select name="language" onClick={handleLanguage}>
+            <select name="language" className='languageSelector'onClick={handleLanguage}>
                 <option value="esp">ESP</option>
                 <option value="eng">ING</option>
             </select>
-
-            {/* <div >
-                <input
-                    type="radio"
-                    name="theme"
-                    id="light"
-                    onClick={handleLanguage}
-                    value="esp"
-                />
-                <label>esp</label>
-                <input
-                    type="radio"
-                    name="theme"
-                    id="dark"
-                    onClick={handleLanguage}
-                    value="eng"
-                />
-                <label>ing</label>
-            </div> */}
 
             <section className="section">
                 <div className="buttonContainer">
                     <input 
                         type="radio"
+                        className='radio-item'
                         name="theme"
                         id="light"
                         onClick={handleTheme}
@@ -53,6 +35,7 @@ function Menu2() {
                     <label className="label" htmlFor="light">{text.LightLabel}</label>
                     <input 
                         type="radio"
+                        className='radio-item'
                         name="theme"
                         id="dark"
                         onClick={handleTheme}
@@ -61,21 +44,19 @@ function Menu2() {
                         <label className="label" htmlFor="dark">{text.DarkLabel}</label>
                 </div>
 
-                
-
                 <div className="DirectionsContainer">
                     <ul>
+                        <li>
+                            <Link to="/">{text.Home}</Link>
+                        </li>
                         <li>
                             <Link to="/About">{text.About}</Link>
                         </li>
                         <li>
+                            <Link to="/Blog">{text.Blog}</Link>
+                        </li>
+                        <li>
                             <Link to="/Contact">{text.Contact}</Link>
-                        </li>
-                        <li>
-                            <Link to="/Blog">Blog</Link>
-                        </li>
-                        <li>
-                            <Link to="/">{text.Home}</Link>
                         </li>
                     </ul>
                 </div>

@@ -17,7 +17,7 @@
 
 .dark .App {
     width: 100%;
-    height: 100%;
+    height: 200vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -28,31 +28,13 @@
 
 
 .light{
-    background-color: #EFF1F3;
+    background-color: rgb(255, 255, 255);
 }
-
-
-/* #light { 
-    background-color: #EFF1F3;
-    
-}
-
-#dark { 
-    background-color: #0E0F19;
-}
-
- .nombre_switch {
-    color: #fff;
-    font-family: 'Prompt', sans-serif;       
-} */
-
-
-
 
 .App  {
-   
+    /* background-color: #fff; */
     display: grid;
-    height: 100vh;
+    height: auto;
     padding: auto;
     
 }
@@ -62,76 +44,17 @@
     justify-content: center;
     flex-direction: column;
 }
-
-.language-container h1{
-    color: #fff;
-    font-family: 'Prompt', sans-serif;
-    
-}
-
-#light .language-container{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #223843;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-    transition: all 0.3s ease;
-    border: 1px solid #fff;
-    border-color: rgb(112, 245, 51);
-}
-#dark .language-container{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #924200;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    border: 1px solid #fff;
-    border-color: #ffe23c;
-    box-shadow: #ffd902 0px 0px 10px 0px;
+h1{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px ;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
-#light .switch-container {
-    width:300px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #223843;
-    transition: all 0.3s ease;
-    border: 1px solid #fff;
-    border-color: rgb(112, 245, 51);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px -0px 5px 2px rgba(0,0,0,0.75);
-}
 
-#dark .switch-container {
-        width:300px;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #924200;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        border: 1px solid #fff;
-        border-color: #ffe23c;
-        box-shadow: #ffd902 0px 0px 10px 0px;
-    
-}
+
+
+

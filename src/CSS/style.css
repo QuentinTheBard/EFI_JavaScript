@@ -14,12 +14,6 @@
 
 
 
-.buttonContainer{
-    height: 20px;
-    width: 20px;
-    padding: 20px;
-    margin: 20px
-}
 
 
 .dark{
@@ -34,19 +28,14 @@
     margin: 30px
 }
 
-.dark .label{
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    color: white;
-    margin: 10px
-}
+
 
 /* 
 -------------------------------------------------------- */
 
 .light{
-    color: black
+    color: black;
+    
 }
 
 .light .Title{
@@ -57,12 +46,7 @@
     margin: 30px
 }
 
-.dark .label{
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    color: black
-}
+
 
 
 
@@ -73,9 +57,8 @@
 
 .section {
     width: 100%;
-    /* height: 100vh; */
     height: auto;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -98,7 +81,7 @@
 }
 
 
-#dark .DirectionsContainer{
+.dark .DirectionsContainer{
     width: 400px;
     height: 300px;
     background-color: #924200;
@@ -129,7 +112,7 @@ ul li {
     transition: 0.3s all ease;
     background: linear-gradient(135deg, #c75330, #5f0000);
 }
-#dark ul li{
+.dark ul li{
         width: 100%;
         margin: 3px 0;
         border-radius: 5px;
@@ -170,4 +153,279 @@ ul li:hover a {
         opacity: 1;
         letter-spacing: 100px;
     }
+}
+
+
+/* Radio Input Styles */
+/* Light */
+.light .buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 2%;
+}
+.light .buttonContainer:hover{
+    cursor: pointer;
+}
+
+.light .radio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    /* background: green; */
+}
+.light .label{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+/* Dark */
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 2%;
+}
+.buttonContainer input, .buttonContainer label{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonContainer input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+  
+.buttonContainer label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+.buttonContainer label:hover {
+    background-color: rgb(138, 138, 138);
+}
+
+
+.buttonContainer input[type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+}
+
+.dark .buttonContainer input[type="radio"]:checked + label {
+    background-color: #924200;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: #ffe23c;
+    box-shadow: #ffd902 0px 0px 10px 0px;
+}
+.light .buttonContainer input[type="radio"]:checked + label {
+    background-color: #223843;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: rgb(112, 245, 51);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+.light .buttonContainer label{
+    color: #fff;
+}
+/* -_-_-___- */
+
+/* Language Selector */
+/* Light */
+.light .languageSelector {
+    background-color: #223843;
+    color: white;
+    padding: 12px;
+    width: 200px;
+    font-size: 18px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: rgb(112, 245, 51);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.light .languageSelector::before {
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.light .languageSelector:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.light .languageSelector  option {
+    padding: 30px;
+}
+/* Dark */
+.languageSelector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.dark .languageSelector {
+    background-color: #924200;
+    color: white;
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: #ffe23c;
+    box-shadow: #ffd902 0px 0px 10px 0px;
+    font-size: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.languageSelector::before {
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.languageSelector:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .languageSelector  option {
+    background-color: #5f0000;
+    border: 1px solid #fff;
+    border-color: #ffe23c;
+    box-shadow: #ffd902 0px 0px 10px 0px;
+}
+.languageSelector:hover{
+    cursor: pointer;
+}
+
+
+/* Routes */
+.containerRoute{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+}
+.dark .containerRoute{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+    background-color: #0E0F19;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.light .containerRoute{
+    background-color: rgb(255, 255, 255);
+}
+.dark .containerRoute img{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    padding: 9px;
+    background-color: #924200;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: #ffe23c;
+    box-shadow: #ffd902 0px 0px 10px 0px;
+    
+}
+.light .containerRoute img{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    padding: 9px;
+    background-color: #29414d;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    border-color: rgb(112, 245, 51);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.containerRoute h1{
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #4d0811, #fd4545);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.light .containerRoute h1{
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #223843, #009721);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 7px rgba(255,210,78,0.12);
+}
+
+
+/* Titulo Buenos Dias/Good Morning */
+.dark .Title{
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #4d0811, #fdbd45);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 7px rgba(255,210,78,0.12);
+    
+}
+.light .Title{
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #223843, #009721);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 7px rgba(255,210,78,0.12);
+    
 }
