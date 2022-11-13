@@ -50,7 +50,7 @@ function Menu2() {
                         onClick={handleTheme}
                         value="light"
                     />
-                    <label classname="label" htmlFor="light">{text.LightLabel}</label>
+                    <label className="label" htmlFor="light">{text.LightLabel}</label>
                     <input 
                         type="radio"
                         name="theme"
@@ -58,7 +58,7 @@ function Menu2() {
                         onClick={handleTheme}
                         value="dark"
                     />
-                        <label classname="label" htmlFor="dark">{text.DarkLabel}</label>
+                        <label className="label" htmlFor="dark">{text.DarkLabel}</label>
                 </div>
 
                 
@@ -66,7 +66,7 @@ function Menu2() {
                 <div className="DirectionsContainer">
                     <ul>
                         <li>
-                            <Link to="/About" exact >{text.About}</Link>
+                            <Link to="/About">{text.About}</Link>
                         </li>
                         <li>
                             <Link to="/Contact">{text.Contact}</Link>
