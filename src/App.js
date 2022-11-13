@@ -29,7 +29,7 @@ function App() {
         </Routes>
         </LanguageProvider>
         </ThemeProvider>
-      </Router>;
+      </Router>
     </div>
   )
 }
